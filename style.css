@@ -84,7 +84,7 @@ right a:hover:not(.active) {
 }
 
 .active {
-    background-color: #4CAF50;
+    background-color: #e53838;
 }
 
 .nothing {
@@ -109,7 +109,7 @@ right a:hover:not(.active) {
 /* Handle */
 
  ::-webkit-scrollbar-thumb {
-    background: #888;
+    background: #e53838;
 }
 
 
