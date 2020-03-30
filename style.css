@@ -11,23 +11,24 @@ body {
 .bar-btns {
     position: fixed;
     width: 100%;
+    z-index: 1;
     background-color: #1f1f1f;
-    top: 0;
 }
 
 .dz-bar {
     position: fixed;
     width: 100%;
-    height: auto;
+    z-index: 2;
 }
 
 .tocont {
     background-color: white;
     width: 98%;
     height: .7px;
-    position: relative;
+    position: fixed;
     left: 50%;
     transform: translateX(-50%);
+    z-index: 1;
 }
 
 ul {
@@ -36,11 +37,12 @@ ul {
     padding: 0;
     overflow: hidden;
     height: 100%;
-    font-size: 67px;
+    font-size: 3.48vw;
 }
 
 left {
     float: left;
+    width: 20%;
 }
 
 left a {
@@ -48,8 +50,7 @@ left a {
     color: white;
     text-align: center;
     text-decoration: none;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-top: 20px;
 }
 
 left a:hover:not(.active) {
@@ -58,14 +59,14 @@ left a:hover:not(.active) {
 
 right {
     float: right;
+    width: 20%;
 }
 
 right a {
     display: block;
     color: white;
     text-align: center;
-    padding-right: 50px;
-    padding-left: 50px;
+    padding-top: 20px;
     text-decoration: none;
 }
 
