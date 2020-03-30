@@ -2,12 +2,15 @@
 <html>
 
 <head>
-<title>DevZone</title>
-<link rel="stylesheet" href="../style.css">
+    <title>DevZone</title>
+    <link rel="icon" type="image/png" href="../Untitled-2.png">
+    <link rel="stylesheet" href="../style.css">
 </head>
 
 <body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <img class="dz-bar" src="../part1.png">
+    <img class="dz-logo" src="../part2.png">
     <div class="bar-btns">
         <ul>
             <left><a  href="../">Home</a></left>
@@ -16,24 +19,26 @@
             <right><a href="../ourwork/">Our Work</a></right>
         </ul>
     </div>
-    <img class="dz-bar" src="../Untitled-1.png">
     <div class="tocont"></div>
 </body>
 
 <script>
     $(document).ready(function() {
-        $(".bar-btns").css({
-            'height': ($(".dz-bar").height() + 'px')
-        });
-        $("left a").css({
-            'padding-top': (($(".dz-bar").height() / 2 + 10) + "px")
-        });
-        $("right a").css({
-            'padding-top': (($(".dz-bar").height() / 2 + 10) + "px")
-        });
         $(".tocont").css({
-            'top': ($(".dz-bar").height() + 'px')
+            'top': ($(".dz-logo").height() + "px")
+        });
+        $(".bar-btns").css({
+            'top': ($(".dz-logo").height() - ($(".bar-btns").height()))
+        });
+    });
+    $(window).resize(function() {
+        $(".tocont").css({
+            'top': ($(".dz-logo").height() + "px")
+        });
+        $(".bar-btns").css({
+            'top': ($(".dz-logo").height() - ($(".bar-btns").height()))
         });
     });
 </script>
+
 </html>
