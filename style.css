@@ -21,6 +21,15 @@ body {
     z-index: 2;
 }
 
+.dz-logo {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 17.5%;
+    height: auto;
+    z-index: 2;
+}
+
 .tocont {
     background-color: white;
     width: 98%;
@@ -37,7 +46,7 @@ ul {
     padding: 0;
     overflow: hidden;
     height: 100%;
-    font-size: 3.48vw;
+    font-size: 3.75vw;
 }
 
 left {
