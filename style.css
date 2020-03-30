@@ -5,8 +5,9 @@
 
 body {
     background-color: #1f1f1f;
-    font-family: Roboto;
+    font-family: 'Roboto';
     font-size: 16px;
+    color: #c9c9c9;
 }
 
 .bar-btns {
@@ -64,7 +65,7 @@ left a {
 }
 
 left a:hover:not(.active) {
-    background-color: #111;
+    background-color: #1b1b1b;
 }
 
 right {
@@ -81,7 +82,7 @@ right a {
 }
 
 right a:hover:not(.active) {
-    background-color: #111;
+    background-color: #1b1b1b;
 }
 
 .active {
@@ -103,7 +104,7 @@ right a:hover:not(.active) {
 /* Track */
 
  ::-webkit-scrollbar-track {
-    background: #f1f1f1;
+    background: #c9c9c9;
 }
 
 
@@ -118,4 +119,11 @@ right a:hover:not(.active) {
 
  ::-webkit-scrollbar-thumb:hover {
     background: #555;
+}
+
+#content {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 30px;
+    padding-left: 30px;
 }
