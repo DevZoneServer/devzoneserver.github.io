@@ -20,17 +20,20 @@
     <div class="tocont"></div>
 </body>
 
-    <script>
-        $(document).ready(function () {
-            $(".bar-btns").css({
-                'height': ($(".dz-bar").height() + 'px')
-            });
-            $("left").css({
-                'height': ($(".dz-bar").height() + 'px')
-            });
-            $(".tocont").css({
-                'top': ($(".dz-bar").height() + 'px')
-            });
+<script>
+    $(document).ready(function() {
+        $(".bar-btns").css({
+            'height': ($(".dz-bar").height() + 'px')
         });
+        $("left a").css({
+            'padding-top': (($(".dz-bar").height() / 2 + 10) + "px")
+        });
+        $("right a").css({
+            'padding-top': (($(".dz-bar").height() / 2 + 10) + "px")
+        });
+        $(".tocont").css({
+            'top': ($(".dz-bar").height() + 'px')
+        });
+    });
 </script>
 </html>
