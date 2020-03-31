@@ -13,14 +13,13 @@
     <a href="../"><img class="dz-logo" src="../part2.png"></a>
     <div class="bar-btns">
         <ul>
-            <left><a  href="../portfolio/">Portfolio</a></left>
+            <left><a href="../portfolio/">Portfolio</a></left>
             <left><a class="active" href="../news/">News</a></left>
             <right><a href="../contact/">Contact</a></right>
             <right><a href="../ourwork/">Our Work</a></right>
         </ul>
     </div>
     <div class="tocont"></div>
-    <div class="nothing" id="i do this so static divs come after the bar lol"></div>
     <div id="content">
         <p style="font-size: 30px;">This is done so we can see the scroll bar: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sed odio consectetur, hendrerit dolor ut, feugiat mi. In aliquet fringilla risus. Sed id lorem eget mauris porta interdum in eu nisl.
             Suspendisse id massa sit amet ligula ornare blandit nec ut tortor. Proin et tellus bibendum, feugiat sapien in, ornare urna. Nulla feugiat convallis nunc, at posuere tortor scelerisque vitae. Quisque eu porta arcu, nec eleifend orci. Nam est
@@ -55,25 +54,13 @@
 
 <script>
     $(document).ready(function() {
-        $(".tocont").css({
-            'top': ($(".dz-logo").height() + "px")
-        });
-        $(".nothing").css({
-            'height': ($(".dz-logo").height() + "px")
-        });
         $(".bar-btns").css({
-            'top': ($(".dz-logo").height() - ($(".bar-btns").height()))
+            'padding-top': ($(".dz-logo").height() - ($(".bar-btns").height()))
         });
     });
     $(window).resize(function() {
-        $(".tocont").css({
-            'top': ($(".dz-logo").height() + "px")
-        });
-        $(".nothing").css({
-            'height': ($(".dz-logo").height() + "px")
-        });
         $(".bar-btns").css({
-            'top': ($(".dz-logo").height() - ($(".bar-btns").height()))
+            'padding-top': ($(".dz-logo").height() - ($(".bar-btns").height()))
         });
     });
 </script>
