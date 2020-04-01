@@ -11,7 +11,7 @@ body {
 }
 
 .bar-btns {
-    position: fixed;
+    position: static;
     width: 100%;
     z-index: 1;
     background-color: #1f1f1f;
@@ -34,11 +34,10 @@ body {
 
 .tocont {
     background-color: white;
-    width: 98%;
+    width: 97%;
+    margin: auto;
     height: .7px;
-    position: fixed;
-    left: 50%;
-    transform: translateX(-50%);
+    position: static;
     z-index: 1;
 }
 
@@ -87,10 +86,6 @@ right a:hover:not(.active) {
 
 .active {
     background-color: #e53838;
-}
-
-.nothing {
-    width: 100%;
 }
 
 
