@@ -57,39 +57,38 @@ left {
     width: 20%;
 }
 
-left a {
-    display: block;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    padding-top: 20px;
-}
+    left a {
+        display: block;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        padding-top: 20px;
+    }
 
-left a:hover:not(.active) {
-    background-color: #1b1b1b;
-}
+        left a:hover:not(.active) {
+            background-color: #1b1b1b;
+        }
 
 right {
     float: right;
     width: 20%;
 }
 
-right a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding-top: 20px;
-    text-decoration: none;
-}
+    right a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding-top: 20px;
+        text-decoration: none;
+    }
 
-right a:hover:not(.active) {
-    background-color: #1b1b1b;
-}
+        right a:hover:not(.active) {
+            background-color: #1b1b1b;
+        }
 
 .active {
     background-color: #e53838;
 }
-
 
 /* width */
 
@@ -97,26 +96,23 @@ right a:hover:not(.active) {
     width: 10px;
 }
 
-
 /* Track */
 
- ::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
     background: #c9c9c9;
 }
 
-
 /* Handle */
 
- ::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
     background: #e53838;
 }
 
+    /* Handle on hover */
 
-/* Handle on hover */
-
- ::-webkit-scrollbar-thumb:hover {
-    background: #555;
-}
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
 
 #content {
     padding-top: 30px;
