@@ -1,0 +1,81 @@
+body {
+  font-family: "Nunito Sans", sans-serif;
+  margin: 0 5rem;
+  color: #303030;
+}
+
+* {
+  font-weight: normal;
+}
+
+article {
+  margin: 5rem auto 0rem auto;
+  width: 60%;
+}
+
+article h1 {
+  font-size: 3rem;
+  font-family: "Quicksand", sans-serif;
+}
+
+article h1 span {
+  box-shadow: inset 0 -0.3em #3c344457;
+}
+
+.author {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.author img {
+  width: 3.5rem;
+  height: auto;
+}
+
+.aboutAuthor * {
+  margin: 0;
+  margin-left: 1rem;
+}
+
+.aboutAuthor h3.service {
+  opacity: 75%;
+}
+
+hr {
+  margin: 3rem 0;
+  opacity: 30%;
+}
+
+article p {
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+
+figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+figure img {
+  width: 100%;
+}
+
+figcaption {
+  margin: 1rem 0;
+  font-style: italic;
+}
+
+.socials {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.socials img {
+  width: 3rem;
+  margin: 1rem;
+}
