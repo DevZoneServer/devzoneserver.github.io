@@ -11,8 +11,24 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
+:root {
+  --primary-color: #302ae6;
+  --secondary-color: #536390;
+  --font-color: #424242;
+  --bg-color: #fff;
+  --heading-color: #292922;
+}
+
+[data-theme="dark"] {
+  --primary-color: #9a97f3;
+  --secondary-color: #818cab;
+  --font-color: #e1e1ff;
+  --bg-color: #161625;
+  --heading-color: #818cab;
+}
+
 html {
-  color: #222;
+  color: var(--font-color);
   font-size: 1em;
   line-height: 1.4;
 }
@@ -20,6 +36,7 @@ html {
 body {
   margin: 0 5rem;
   font-family: "Nunito Sans", sans-serif;
+  background-color: var(--bg-color);
 }
 
 /*
@@ -274,7 +291,7 @@ textarea {
   border: none;
   background-color: #3c3444;
   padding: 10px 30px;
-  color: #fff;
+  color: #e1e1ff;
   border-radius: 5px;
   border-bottom: 4px solid #1e1922;
   transition: 0.1s;
@@ -288,13 +305,13 @@ textarea {
 
 .arrowBounce {
   animation: bounce 2s infinite;
-  color: #5778f3;
+  color: #e1e1ff;
   font-size: 22px;
   position: relative;
 }
 
 .arrowBounce svg {
-  color: #3c3444;
+  color: var(--font-color);
 }
 
 .arrowBounce::after {
