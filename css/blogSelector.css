@@ -1,12 +1,30 @@
+:root {
+  --primary-color: #302ae6;
+  --secondary-color: #536390;
+  --font-color: #424242;
+  --bg-color: #eee;
+  --heading-color: #292922;
+  --bg-secondary: #fff;
+}
+
+[data-theme="dark"] {
+  --primary-color: #9a97f3;
+  --secondary-color: #818cab;
+  --font-color: #e1e1ff;
+  --bg-color: #161625;
+  --heading-color: #818cab;
+  --bg-secondary: #212138;
+}
+
 a {
-  color: #303030;
+  color: var(--font-color);
 }
 
 body {
   font-family: "Nunito Sans", sans-serif;
   margin: 0 5rem;
-  color: #303030;
-  background-color: #eeeeee;
+  color: var(--font-color);
+  background-color: var(--bg-color);
 }
 
 * {
@@ -17,7 +35,7 @@ article {
   margin: 5rem auto 0rem auto;
   width: 60%;
   height: fit-content;
-  background-color: white;
+  background-color: var(--bg-secondary);
 
   display: flex;
   flex-direction: row;

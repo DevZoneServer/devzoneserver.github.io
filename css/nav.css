@@ -2,8 +2,9 @@
   --primary-color: #302ae6;
   --secondary-color: #536390;
   --font-color: #424242;
-  --bg-color: #fff;
+  --bg-color: #eee;
   --heading-color: #292922;
+  --bg-secondary: #fff;
 }
 
 [data-theme="dark"] {
@@ -12,6 +13,7 @@
   --font-color: #e1e1ff;
   --bg-color: #161625;
   --heading-color: #818cab;
+  --bg-secondary: #212138;
 }
 
 .borderLeftRight {

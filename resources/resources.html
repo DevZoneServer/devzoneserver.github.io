@@ -1,0 +1,145 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>Home | DevZone</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/resources.css">
+  <link rel="stylesheet" href="../css/nav.css">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Quicksand:wght@500;700&family=Raleway:wght@200;300&display=swap"
+    rel="stylesheet">
+
+  <meta name="theme-color" content="#fafafa">
+
+</head>
+
+<body>
+  <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+  <div class="container">
+    <nav>
+      <img class="logo" src="../img/DevZone.png" alt="logo">
+      <ul>
+        <a class="borderLeftRight">
+          <li>HOME</li>
+        </a>
+        <a href="./blogs/blogSelector.html" class="borderLeftRight">
+          <li>BLOGS</li>
+        </a>
+        <a class="borderLeftRight">
+          <li>RESOURCES</li>
+        </a>
+        <a class="borderLeftRight">
+          <li>CONTACTS</li>
+        </a>
+      </ul>
+      <div class="theme-switch-wrapper">
+        <label class="theme-switch" for="checkbox">
+          <input type="checkbox" id="checkbox" />
+          <div class="slider round"></div>
+        </label>
+      </div>
+
+    </nav>
+
+    <div class="container">
+      <h1>
+        <span>Web Dev Resources</span>
+      </h1>
+      <div class="row">
+        <a>
+          <center>
+            <img src="../img/DevZone.png">
+            <h3>HTML</h3>
+          </center>
+        </a>
+
+        <a>
+          <center>
+            <img src="../img/DevZone.png">
+            <h3>CSS</h3>
+          </center>
+        </a>
+
+        <a>
+          <center>
+            <img src="../img/DevZone.png">
+            <h3>JS</h3>
+          </center>
+        </a>
+
+        <a>
+          <center>
+            <img src="../img/DevZone.png">
+            <h3>LISTS</h3>
+          </center>
+        </a>
+      </div>
+    </div>
+
+    <!-- Add your site or application content here -->
+
+    <script src="js/vendor/modernizr-3.8.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script>
+      window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')
+
+    </script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+      window.ga = function () {
+        ga.q.push(arguments)
+      };
+      ga.q = [];
+      ga.l = +new Date;
+      ga('create', 'UA-XXXXX-Y', 'auto');
+      ga('set', 'transport', 'beacon');
+      ga('send', 'pageview')
+
+    </script>
+    <script>
+      const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+
+      function switchTheme(e) {
+        if (e.target.checked) {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        } else {
+          document.documentElement.setAttribute('data-theme', 'light');
+        }
+      }
+
+
+      toggleSwitch.addEventListener('change', switchTheme, false);
+
+
+      const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
+
+      if (currentTheme) {
+        document.documentElement.setAttribute('data-theme', currentTheme);
+
+        if (currentTheme === 'dark') {
+          toggleSwitch.checked = true;
+        }
+      }
+
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>

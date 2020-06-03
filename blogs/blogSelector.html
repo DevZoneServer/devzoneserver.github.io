@@ -32,7 +32,12 @@
         <li>PROJECTS</li>
       </a>
     </ul>
-    <input type="checkbox" id="toggle" class="offscreen" /> <label for="toggle" class="switch"></label>
+    <div class="theme-switch-wrapper">
+      <label class="theme-switch" for="checkbox">
+        <input type="checkbox" id="checkbox" />
+        <div class="slider round"></div>
+      </label>
+    </div>
   </nav>
   <a href="">
     <article>
@@ -96,6 +101,33 @@
       </div>
     </article>
   </a>
+
+  <script>
+    const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+
+    function switchTheme(e) {
+      if (e.target.checked) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      } else {
+        document.documentElement.setAttribute('data-theme', 'light');
+      }
+    }
+
+
+    toggleSwitch.addEventListener('change', switchTheme, false);
+
+
+    const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
+
+    if (currentTheme) {
+      document.documentElement.setAttribute('data-theme', currentTheme);
+
+      if (currentTheme === 'dark') {
+        toggleSwitch.checked = true;
+      }
+    }
+
+  </script>
 </body>
 
 </html>

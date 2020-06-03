@@ -1,0 +1,43 @@
+:root {
+  --primary-color: #302ae6;
+  --secondary-color: #536390;
+  --font-color: #424242;
+  --bg-color: #eee;
+  --heading-color: #292922;
+  --bg-secondary: #fff;
+}
+
+[data-theme="dark"] {
+  --primary-color: #9a97f3;
+  --secondary-color: #818cab;
+  --font-color: #e1e1ff;
+  --bg-color: #161625;
+  --heading-color: #818cab;
+  --bg-secondary: #212138;
+}
+
+body {
+  background-color: var(--bg-color);
+}
+
+h1 span {
+  box-shadow: inset 0 -0.3em #3c344457;
+}
+
+a img {
+  max-width: 5rem;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.row a {
+  background-color: var(--bg-secondary);
+  padding: 2rem;
+  width: 10rem;
+  height: 10rem;
+}
