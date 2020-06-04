@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/nav.css">
+  <link rel="stylesheet" href="../css/blog.css">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Quicksand:wght@500;700&family=Raleway:wght@200;300&display=swap"
+    rel="stylesheet">
+  <title>DevZone | Blog Template</title>
+</head>
+
+<body>
+  <nav>
+    <img class="logo" src="../img/DevZone.png" alt="logo">
+    <ul>
+      <a href="../index.html" class="borderLeftRight">
+        <li>HOME</li>
+      </a>
+      <a href="blogSelector.html" class="borderLeftRight">
+        <li>BLOGS</li>
+      </a>
+      <!-- <a class="borderLeftRight">
+        <li>RESOURCES</li>
+      </a>
+      <a class="borderLeftRight">
+        <li>PROJECTS</li>
+      </a> -->
+    </ul>
+    <div class="theme-switch-wrapper">
+      <label class="theme-switch" for="checkbox">
+        <input type="checkbox" id="checkbox" />
+        <div class="slider round"></div>
+      </label>
+    </div>
+  </nav>
+
+  <article>
+    <h1>
+      <span class="textUnderline">Welcome to DevZone!</span>
+    </h1>
+    <div class="author">
+      <img src="../img/DevZone.png">
+      <div class="aboutAuthor">
+        <h3>
+          Aryan Godde
+        </h3>
+        <h3 class="service">
+          A Programmer Duck.
+        </h3>
+      </div>
+    </div>
+
+    <hr>
+
+    <p>
+      Hiya there developers! I am Aryan from DevZone. Have you ever felt that you are stuck on a coding problem
+      and can't seem to get out of it? Have you ever wondered if your art can be any better? If you are like me
+      and always keep questioning yourself about your programs, art, etc. Then DevZone is the best place for you to be.
+    </p>
+    <br>
+    <br>
+    <p>
+      You might be wondering why is it so? Fear not brave developer, i am here to explain just that. At DevZone you
+      get to meet people who are developers like you. Some are beggining their journey in the wild, while others, have
+      explored the vast dungeons full of bugs. And the best part is all of them want to help you become a better
+      developer. And in return, you can also help people who are new to some regions, guide them through the palace of
+      Game Design, or the deadly caves of python.
+    </p>
+    <p>
+      And now you might be wondering about your art. Well, to that i must say we have got you covered! There are artists
+      and designers who have spent hours trying to perfect their work and are there to guide you to the right direction
+      if you ever get lost. You can get feedback on not only art and programming but also music and other creative
+      stuff.
+    </p>
+    <p>
+      So now stop compalining and hop on the <strong>
+        <a href="https://discord.gg/VEdn4yk" class="textUnderline">discord server!</a>
+      </strong> Oh the projects? Yeah! We do
+      have some community projects
+      where we all come together to build something great, and in the adventure encounter many problems, some we
+      just
+      smack
+      with our tiny fingers, while some take a few people to be taken down. But at the end of the journey, we always
+      come out with
+      the treasure, the knowledge that we gained.
+    </p>
+    <!-- <div class="socials">
+      <a><img src="../img/DevZone.png"> </a>
+      <a><img src="../img/DevZone.png"> </a>
+      <a><img src="../img/DevZone.png"> </a>
+    </div> -->
+  </article>
+
+  <script>
+    const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+
+    function switchTheme(e) {
+      if (e.target.checked) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      } else {
+        document.documentElement.setAttribute('data-theme', 'light');
+      }
+    }
+
+
+    toggleSwitch.addEventListener('change', switchTheme, false);
+
+
+    const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
+
+    if (currentTheme) {
+      document.documentElement.setAttribute('data-theme', currentTheme);
+
+      if (currentTheme === 'dark') {
+        toggleSwitch.checked = true;
+      }
+    }
+
+  </script>
+</body>
+
+</html>

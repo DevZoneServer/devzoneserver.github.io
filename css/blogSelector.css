@@ -75,17 +75,38 @@ article h1 span {
   margin-left: 1rem;
 }
 
-.aboutAuthor h3.service {
-  opacity: 75%;
-}
-
-hr {
-  margin: 3rem 0;
-  opacity: 30%;
-  font-size: 1rem;
-}
-
 article p {
   font-size: 1rem;
   line-height: 1.5;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  :root {
+    font-size: 12px;
+  }
+  body {
+    margin: 0 5%;
+  }
+
+  article {
+    margin: 5rem auto 0rem auto;
+    width: 80%;
+    height: fit-content;
+    background-color: var(--bg-secondary);
+
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  article p {
+    font-size: 1.8rem;
+    line-height: 1.5;
+  }
 }
